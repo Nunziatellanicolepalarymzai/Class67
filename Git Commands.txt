@@ -1,0 +1,130 @@
+1:git init-initilize your reposetary and git starts tracking changes in your file
+
+\Whitehatjr\Class67>mkdir mystory
+
+C:\Whitehatjr\Class67>cd mystory
+
+C:\Whitehatjr\Class67\mystory>git init
+Initialized empty Git repository in C:/Whitehatjr/Class67/mystory/.git/
+
+C:\Whitehatjr\Class67\mystory>
+
+\Whitehatjr\Class67\mystory>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        characters.txt
+        story.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Whitehatjr\Class67\mystory>git add characters.txt
+
+C:\Whitehatjr\Class67\mystory>git add story.txt
+
+C:\Whitehatjr\Class67\mystory>
+
+C:\Whitehatjr\Class67\mystory>git commit -m "my first commit"
+[master (root-commit) 0abbb84] my first commit
+ 2 files changed, 3 insertions(+)
+ create mode 100644 characters.txt
+ create mode 100644 story.txt
+
+C:\Whitehatjr\Class67\mystory>git log
+commit 0abbb84212ddec72729fc36ba09bf8799b2e5d3f (HEAD -> master)
+Author: Nunziatellanicolepalarymzai <nunzinicole8@gmail.com>
+Date:   Thu Mar 11 14:31:23 2021 +0530
+
+    my first commit
+
+C:\Whitehatjr\Class67\mystory>
+
+C:\Whitehatjr\Class67\mystory>git commit -m "my second commit"
+[master 4731b85] my second commit
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Whitehatjr\Class67\mystory>git log
+commit 4731b851ee8da83dc7b6b6b3c32246a3482a9d2e (HEAD -> master)
+Author: Nunziatellanicolepalarymzai <nunzinicole8@gmail.com>
+Date:   Thu Mar 11 14:34:26 2021 +0530
+
+    my second commit
+
+commit 0abbb84212ddec72729fc36ba09bf8799b2e5d3f
+Author: Nunziatellanicolepalarymzai <nunzinicole8@gmail.com>
+Date:   Thu Mar 11 14:31:23 2021 +0530
+
+    my first commit
+
+C:\Whitehatjr\Class67\mystory>git checkout 0abbb
+Note: switching to '0abbb'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 0abbb84 my first commit
+
+C:\Whitehatjr\Class67\mystory>git checkout 4731b
+Previous HEAD position was 0abbb84 my first commit
+HEAD is now at 4731b85 my second commit
+
+C:\Whitehatjr\Class67\mystory>git branch
+* (HEAD detached at 4731b85)
+  master
+
+C:\Whitehatjr\Class67\mystory>git branch branch2
+
+C:\Whitehatjr\Class67\mystory>git checkout branch2
+Switched to branch 'branch2'
+
+C:\Whitehatjr\Class67\mystory>git branch
+* branch2
+  master
+
+C:\Whitehatjr\Class67\mystory>
+
+C:\Whitehatjr\Class67\mystory>git branch
+* (HEAD detached at 4731b85)
+  master
+
+C:\Whitehatjr\Class67\mystory>git branch branch2
+
+C:\Whitehatjr\Class67\mystory>git checkout branch2
+Switched to branch 'branch2'
+
+C:\Whitehatjr\Class67\mystory>git branch
+* branch2
+  master
+
+C:\Whitehatjr\Class67\mystory>git checkout master
+Switched to branch 'master'
+
+C:\Whitehatjr\Class67\mystory>git remote add origin https://github.com/Nunziatellanicolepalarymzai/Class67.git
+
+C:\Whitehatjr\Class67\mystory>git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 768 bytes | 64.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Nunziatellanicolepalarymzai/Class67.git
+ * [new branch]      master -> master
+
+C:\Whitehatjr\Class67\mystory>
